@@ -13,6 +13,8 @@ py optimizer_lab.py --runs 5 --iterations 2000 --generations 200 --population 50
 
 Los resultados se crean en `results/`: `experimental_results.xlsx` contiene las hojas `results`, `convergence` y `summary`; también se generan curvas de convergencia y una gráfica de tiempos. Para una prueba rápida: `py optimizer_lab.py --runs 1 --iterations 100 --generations 20 --population 20`.
 
+Para generar el reporte PDF a partir del Excel: `py generate_report.py`. Se crea `reporte_tecnico.pdf` en la carpeta del proyecto.
+
 ## Instancias y alcance experimental
 
 - N-Reinas: N = 8, 50 y 100.
@@ -29,7 +31,7 @@ Los parámetros de los experimentos quedan guardados por ejecución. El objetivo
 
    ```powershell
    git init
-   git add .gitignore optimizer_lab.py requirements.txt README.md run_experiments.ipynb test_optimizer_lab.py results/
+   git add .gitignore optimizer_lab.py generate_report.py requirements.txt README.md run_experiments.ipynb test_optimizer_lab.py results/ reporte_tecnico.pdf
    git commit -m "Implementar experimentos de optimizacion"
    git branch -M main
    git remote add origin https://github.com/TU_USUARIO/TU_REPOSITORIO.git
